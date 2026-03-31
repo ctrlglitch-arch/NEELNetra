@@ -1,0 +1,41 @@
+{
+  "yamuna": [
+    {"year": 2013, "pH": 7.2, "DO": 6.5, "BOD": 3.2, "Nitrate": 1.2, "Phosphate": 0.4, "Turbidity": 5},
+    {"year": 2014, "pH": 7.1, "DO": 6.0, "BOD": 4.0, "Nitrate": 1.5, "Phosphate": 0.5, "Turbidity": 6},
+    {"year": 2015, "pH": 7.0, "DO": 5.8, "BOD": 4.5, "Nitrate": 1.8, "Phosphate": 0.6, "Turbidity": 7},
+    {"year": 2016, "pH": 6.9, "DO": 5.5, "BOD": 5.0, "Nitrate": 2.0, "Phosphate": 0.7, "Turbidity": 8},
+    {"year": 2017, "pH": 6.8, "DO": 5.0, "BOD": 5.5, "Nitrate": 2.2, "Phosphate": 0.8, "Turbidity": 9},
+    {"year": 2018, "pH": 6.7, "DO": 4.8, "BOD": 6.0, "Nitrate": 2.5, "Phosphate": 0.9, "Turbidity": 10},
+    {"year": 2019, "pH": 6.6, "DO": 4.5, "BOD": 6.5, "Nitrate": 2.8, "Phosphate": 1.0, "Turbidity": 11},
+    {"year": 2020, "pH": 6.5, "DO": 4.2, "BOD": 7.0, "Nitrate": 3.0, "Phosphate": 1.2, "Turbidity": 12},
+    {"year": 2021, "pH": 6.5, "DO": 4.0, "BOD": 7.2, "Nitrate": 3.2, "Phosphate": 1.3, "Turbidity": 13},
+    {"year": 2022, "pH": 6.4, "DO": 3.8, "BOD": 7.5, "Nitrate": 3.5, "Phosphate": 1.5, "Turbidity": 14},
+    {"year": 2023, "pH": 6.3, "DO": 3.5, "BOD": 8.0, "Nitrate": 4.0, "Phosphate": 1.8, "Turbidity": 15}
+  ],
+  "ganga": [
+    {"year": 2013, "pH": 7.5, "DO": 7.0, "BOD": 3.5, "Nitrate": 1.5, "Phosphate": 0.5, "Turbidity": 6},
+    {"year": 2014, "pH": 7.4, "DO": 6.8, "BOD": 3.8, "Nitrate": 1.7, "Phosphate": 0.6, "Turbidity": 7},
+    {"year": 2015, "pH": 7.3, "DO": 6.5, "BOD": 4.0, "Nitrate": 2.0, "Phosphate": 0.7, "Turbidity": 8},
+    {"year": 2016, "pH": 7.2, "DO": 6.2, "BOD": 4.5, "Nitrate": 2.2, "Phosphate": 0.8, "Turbidity": 9},
+    {"year": 2017, "pH": 7.1, "DO": 6.0, "BOD": 5.0, "Nitrate": 2.5, "Phosphate": 0.9, "Turbidity": 10},
+    {"year": 2018, "pH": 7.0, "DO": 5.8, "BOD": 5.5, "Nitrate": 2.8, "Phosphate": 1.0, "Turbidity": 11},
+    {"year": 2019, "pH": 6.9, "DO": 5.5, "BOD": 6.0, "Nitrate": 3.0, "Phosphate": 1.2, "Turbidity": 12},
+    {"year": 2020, "pH": 6.8, "DO": 5.2, "BOD": 6.5, "Nitrate": 3.2, "Phosphate": 1.3, "Turbidity": 13},
+    {"year": 2021, "pH": 6.7, "DO": 5.0, "BOD": 7.0, "Nitrate": 3.5, "Phosphate": 1.5, "Turbidity": 14},
+    {"year": 2022, "pH": 6.6, "DO": 4.8, "BOD": 7.5, "Nitrate": 3.8, "Phosphate": 1.6, "Turbidity": 15},
+    {"year": 2023, "pH": 6.5, "DO": 4.5, "BOD": 8.0, "Nitrate": 4.0, "Phosphate": 1.8, "Turbidity": 16}
+  ],
+  "godavari": [
+    {"year": 2013, "pH": 7.6, "DO": 6.8, "BOD": 3.0, "Nitrate": 1.3, "Phosphate": 0.4, "Turbidity": 5},
+    {"year": 2014, "pH": 7.5, "DO": 6.5, "BOD": 3.5, "Nitrate": 1.6, "Phosphate": 0.5, "Turbidity": 6},
+    {"year": 2015, "pH": 7.4, "DO": 6.2, "BOD": 4.0, "Nitrate": 1.8, "Phosphate": 0.6, "Turbidity": 7},
+    {"year": 2016, "pH": 7.3, "DO": 6.0, "BOD": 4.5, "Nitrate": 2.0, "Phosphate": 0.7, "Turbidity": 8},
+    {"year": 2017, "pH": 7.2, "DO": 5.8, "BOD": 5.0, "Nitrate": 2.2, "Phosphate": 0.8, "Turbidity": 9},
+    {"year": 2018, "pH": 7.1, "DO": 5.5, "BOD": 5.5, "Nitrate": 2.5, "Phosphate": 1.0, "Turbidity": 10},
+    {"year": 2019, "pH": 7.0, "DO": 5.2, "BOD": 6.0, "Nitrate": 2.8, "Phosphate": 1.1, "Turbidity": 11},
+    {"year": 2020, "pH": 6.9, "DO": 5.0, "BOD": 6.5, "Nitrate": 3.0, "Phosphate": 1.2, "Turbidity": 12},
+    {"year": 2021, "pH": 6.8, "DO": 4.8, "BOD": 7.0, "Nitrate": 3.2, "Phosphate": 1.3, "Turbidity": 13},
+    {"year": 2022, "pH": 6.7, "DO": 4.5, "BOD": 7.5, "Nitrate": 3.5, "Phosphate": 1.5, "Turbidity": 14},
+    {"year": 2023, "pH": 6.6, "DO": 4.2, "BOD": 8.0, "Nitrate": 4.0, "Phosphate": 1.8, "Turbidity": 15}
+  ]
+}

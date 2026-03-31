@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NeelNetra — River Intelligence</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="cursor"></div>
+<div id="cursor-ring"></div>
+<canvas id="bg-canvas"></canvas>
+<div id="ripple-layer"></div>
+
+<div class="page">
+
+  <nav>
+    <div class="nav-logo">Neel<span>Netra</span></div>
+    <div class="nav-links">
+      <button onclick="navScroll('home')">Home</button>
+      <button onclick="navScroll('check')">Analyze</button>
+      <button onclick="navScroll('info')">Pollutants</button>
+      <button onclick="navScroll('safety')">Safety</button>
+    </div>
+  </nav>
+<div class="right-box"></div>
+  <div id="home">
+    <p class="hero-eyebrow">River Intelligence System &nbsp;/&nbsp; AI-Powered Monitoring</p>
+    <h1 class="hero-title">Water<br>Speaks.<br><em>We Listen.</em></h1>
+    <p class="hero-sub">NeelNetra decodes the health of India's rivers — detecting pollutants, projecting disease risks, and delivering actionable intelligence in real time.</p>
+    <div class="hero-cta">
+      <button class="btn-primary" onclick="navScroll('check')">Analyze a River</button>
+      <button class="btn-ghost" onclick="navScroll('info')">Learn More</button>
+    </div>
+    <div class="hero-scroll"><div class="scroll-line"></div>Scroll to explore</div>
+  </div>
+
+  <hr class="h-line">
+
+  <section id="check">
+    <div class="section-header reveal">
+      <div class="section-num">01 &nbsp;/&nbsp; Analysis</div>
+      <h2 class="section-title">River<br><em>Diagnostics</em></h2>
+    </div>
+    <div class="analyzer-wrap">
+
+  <div class="left-panel">
+    <div class="input-group reveal">
+      <div class="input-label">Enter River Name</div>
+
+      <div class="input-row">
+<select id="riverInput" class="river-select">          <option value="">Select River</option>
+          <option value="ganga">Ganga</option>
+          <option value="yamuna">Yamuna</option>
+          <option value="godavari">Godavari</option>
+        </select>
+        <button onclick="getData()">Analyze →</button>
+      </div>
+
+      <div class="loading-bar" id="loader"></div>
+
+      <p style="font-size:10px;color:var(--muted);letter-spacing:0.05em;margin-top:8px;">
+        Enter any river name to retrieve pollution data, health risks, and safety advisory.
+      </p>
+
+      <div class="graph-box">
+        <div class="result-label" style="margin-bottom:10px;">River Trend Graph</div>
+        <img id="graphImage" style="width:100%;display:none;border:1px solid rgba(0,229,255,0.2);border-radius:8px;" />
+      </div>
+    </div>
+  </div>
+
+  <div id="result">
+    <div class="result-row">
+      <div class="result-label">Pollution Level</div>
+      <div class="result-value" id="pollution">—</div>
+    </div>
+
+    <div class="result-row">
+      <div class="result-label">Dominant Pollutant</div>
+      <div class="result-value" id="pollutant">—</div>
+    </div>
+
+    <div class="result-row">
+      <div class="result-label">Disease Risk Factors</div>
+      <div class="result-value" id="diseases" style="font-size:16px">—</div>
+    </div>
+
+    <div class="result-row">
+      <div class="result-label">Advisory</div>
+      <div class="result-value" id="advice" style="font-size:15px;line-height:1.5">—</div>
+    </div>
+  </div>
+
+</div>
+  </section>
+
+  <hr class="h-line">
+
+  <section id="info">
+    <div class="section-header reveal">
+      <div class="section-num">02 &nbsp;/&nbsp; Pollutants</div>
+      <h2 class="section-title">What Contaminates<br>Our <em>Waters</em></h2>
+    </div>
+    <div class="cards-grid">
+      <div class="info-card reveal">
+        <div class="card-icon">🫧</div>
+        <div class="card-title">Organic Waste</div>
+        <div class="card-body">Sewage and biological discharge deplete dissolved oxygen, triggering dead zones where aquatic life cannot survive. The BOD spike signals acute contamination.</div>
+        <div class="card-stat">↑ BOD &nbsp;·&nbsp; ↓ Dissolved O₂ &nbsp;·&nbsp; Eutrophication</div>
+      </div>
+      <div class="info-card reveal">
+        <div class="card-icon">⚗️</div>
+        <div class="card-title">Industrial Effluent</div>
+        <div class="card-body">Heavy metals — lead, arsenic, cadmium — discharged from tanneries, textile mills, and chemical factories bind to sediment and bioaccumulate through the food chain.</div>
+        <div class="card-stat">Pb &nbsp;·&nbsp; As &nbsp;·&nbsp; Cd &nbsp;·&nbsp; Cr &nbsp;·&nbsp; Hg</div>
+      </div>
+      <div class="info-card reveal">
+        <div class="card-icon">🧴</div>
+        <div class="card-title">Microplastics</div>
+        <div class="card-body">Fragments under 5mm infiltrate aquatic food webs and human tissue. Single-use plastics photodegrade into near-invisible particles, resistant to conventional filtration.</div>
+        <div class="card-stat">&lt; 5mm &nbsp;·&nbsp; Persistent &nbsp;·&nbsp; Endocrine-disrupting</div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="h-line">
+
+  <section id="safety">
+    <div class="section-header reveal">
+      <div class="section-num">03 &nbsp;/&nbsp; Safety</div>
+      <h2 class="section-title">Protecting<br><em>Human Health</em></h2>
+    </div>
+    <div class="safety-grid">
+      <div class="tip-card reveal"><div class="tip-num">01</div><div class="tip-title">Avoid Direct Contact</div><div class="tip-body">Polluted river water carries pathogens causing typhoid, cholera, and hepatitis A. Avoid wading, swimming, or skin exposure during elevated contamination alerts.</div></div>
+      <div class="tip-card reveal"><div class="tip-num">02</div><div class="tip-title">Boil Before Use</div><div class="tip-body">Bringing water to a rolling boil for at least one minute destroys bacteria, viruses, and protozoa. Allow to cool in a covered container before consumption.</div></div>
+      <div class="tip-card reveal"><div class="tip-num">03</div><div class="tip-title">Multi-Stage Filtration</div><div class="tip-body">Combine sediment pre-filters, activated carbon, and UV sterilisation for comprehensive protection against chemical and biological contaminants.</div></div>
+      <div class="tip-card reveal"><div class="tip-num">04</div><div class="tip-title">Monitor Children</div><div class="tip-body">Children are more susceptible to waterborne toxins due to lower body weight and developing immune systems. Enforce strict hygiene around any river activity.</div></div>
+      <div class="tip-card reveal"><div class="tip-num">05</div><div class="tip-title">Report Incidents</div><div class="tip-body">Visible pollution events — foam, discoloration, fish kills — should be reported to the Central Pollution Control Board (CPCB) or State PCBs immediately.</div></div>
+      <div class="tip-card reveal"><div class="tip-num">06</div><div class="tip-title">Source Alternatives</div><div class="tip-body">During high-risk periods, switch to verified municipal supply, certified bottled water, or community RO systems. Avoid irrigation with untreated river water on edible crops.</div></div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-brand">Neel<span>Netra</span></div>
+<div class="footer-note">AI River Pollution Intelligence · Built for India · By India</div>  </footer>
+</div>
+<div id="v-depth-bar">
+  <div id="v-depth-fill"></div>
+  <div id="v-depth-counter">
+    <span class="v-meter-value" id="v-depth-val">0</span>
+    <span class="v-meter-unit">m</span>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
